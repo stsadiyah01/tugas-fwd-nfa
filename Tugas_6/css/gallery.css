@@ -1,0 +1,17 @@
+.link{
+    text-decoration: none;
+}
+.sosmed{
+    text-decoration: none;
+    gap: 3px;
+}
+.cakep{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1px;
+
+}
+

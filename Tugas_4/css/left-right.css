@@ -1,0 +1,24 @@
+body{
+    font-family: arial,sans-serif;
+    margin:0;
+    padding:10px;
+    background: linear-gradient(160deg, #7BBF89, #5EA786, #3E8E6B);
+}
+fieldset{
+    border: 2px solid rgb(107, 239, 120);
+    border-radius:8px;
+    padding:10px;
+    background: white;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    color: #737879;
+}
+a{
+    text-decoration: none;
+    color:#3E8E6B;
+}
+i{
+    margin-right: 6px;
+}

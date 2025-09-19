@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family:arial,sans-serif;
+}
+footer{
+    background: linear-gradient(160deg, #7BBF89, #5EA786, #3E8E6B);
+    text-align: center;
+    color:white;
+    padding: 3px 8px;
+}
+.content{
+    max-width: 600px;
+    margin: auto;
+}
+p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.link a{
+    display:inline-flex;
+    margin-top:1px;
+    text-decoration: none;
+    align-items: center;
+    color:white;
+    gap:5px;
+    font-size:10px;
+    padding: 5px 5px;  
+}
+.footer-text{
+    margin-top: 2px;
+    font-size: 10px;
+}

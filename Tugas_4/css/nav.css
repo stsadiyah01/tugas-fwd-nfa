@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
+nav{
+    background: linear-gradient(160deg, #7BBF89, #5EA786, #3E8E6B);
+    padding:10px 0;
+}
+.nav{
+    display:flex;
+    gap:30px;
+    justify-content: center;
+}
+.nav a{
+    text-decoration: none;
+    font-size:15px;
+    display: flex;
+    color:white;
+    align-items: center;
+    gap:8px;
+    padding: 8px 15px;
+    border-radius: 25px;    
+}

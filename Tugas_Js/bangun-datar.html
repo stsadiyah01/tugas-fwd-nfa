@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Menghitung Luas Bangun Datar</title>
+    <style>
+        body{
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .kotak{
+            background-color: white;
+            padding: 15px;
+            margin: 10px auto;
+            width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 0 2px grey;
+        }
+        h1, h2{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Menghitung Luas Bangun Datar</h1>
+
+    <div class="kotak">
+        <h2>Persegi Panjang</h2>
+        <p>Diketahui sebuah persegi panjang memiliki ukuran panjang 10 cm dan lebar 5 cm. Hitunglah luas dan keliling dari persegi panjang tersebut!</p>
+        <p>Jawab:</p>
+        <p id="persegipanjang"></p>
+    </div>
+
+    <div class="kotak">
+        <h2>Bujur Sangkar</h2>
+        <p>Diketahui sebuah bujur sangkar memiliki ukuran sisi 5 cm. Hitunglah luas dan keliling dari bujur sangkar tersebut!</p>
+        <p>Jawab:</p>
+        <p id="bujursangkar"></p>
+    </div>
+
+    <div class="kotak">
+        <h2>Segitiga</h2>
+        <p>Diketahui sebuah segitiga memiliki ukuran alas 8 cm, sisi 6 cm dan tinggi 5 cm. Hitunglah luas dan keliling dari Segitiga tersebut!</p>
+        <p>Jawab:</p>
+
+        <p id="segitiga"></p>
+    </div>
+
+    <script>
+        // Belum ke function
+        // Menghitung Persegi Panjang
+
+        let panjang = 10;
+        let lebar= 5;
+        let luaspp = panjang * lebar;
+        let kelilingpp = 2 * (panjang + lebar)
+        document.getElementById("persegipanjang").innerText= "Luasnya yaitu " + luaspp + " cm dan kelilingnya yaitu " + kelilingpp + " cm.";
+
+        // Menghitung Bujur Sangkar 
+
+        let sisi = 5;
+        let luasbs = sisi * sisi;
+        let kelilingbs = 4 * sisi;
+        document.getElementById("bujursangkar").innerText= "Luasnya yaitu " + luasbs + " cm dan kelilingnya yaitu " + kelilingbs + " cm.";
+
+        // Menghitung Segitiga
+
+        let alas = 8;
+        let sisist = 6;
+        let tinggi= 5;
+        let luasst = 0.5 * alas * tinggi;
+        let kelilingst = alas + (2 * sisi);
+        document.getElementById("segitiga").innerText= "Luasnya yaitu " + luasst + " cm dan kelilingnya yaitu " + kelilingst + " cm.";
+    </script>
+    
+</body>
+</html>

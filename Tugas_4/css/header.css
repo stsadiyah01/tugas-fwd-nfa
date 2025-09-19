@@ -1,0 +1,38 @@
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+}
+header{
+   
+    background: linear-gradient(160deg, #7BBF89, #5EA786, #3E8E6B);
+    color:white;
+    text-align: center;
+    padding: 10px 15px;
+}
+h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+}
+p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.contacts{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.contacts a{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    gap:2px;
+    font-size:10px;
+    background:rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius:25px;
+    color:white;
+
+}
