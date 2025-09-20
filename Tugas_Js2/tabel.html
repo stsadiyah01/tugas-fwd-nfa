@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel with JS Sadiyah</title>
+    <style>
+        h2{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            font-size: 15px; 
+            font-family: sans-serif; 
+        }
+        thead{
+            background-color: blanchedalmond;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px 12px;
+            text-align: center;
+        }
+        tfoot{
+            background-color: blanchedalmond;
+            font-weight: bold;
+        }
+        tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+        tr:hover{
+            background-color: rgb(226, 221, 216);
+            transition: 0.3s;
+        }
+       
+    </style>
+</head>
+<body>
+    <h2>Data Pegawai PT Selalu Bersama</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Pegawai</th>
+                <th>Umur</th>
+                <th>Jabatan</th>
+                <th>Status</th>
+                <th>Gaji Pokok</th>
+                <th>Tunjangan jabatan</th>
+                <th>BPJS</th>
+                <th>Tunjangan Keluarga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="nama_pegawai"></td>
+                <td id="umur"></td>
+                <td id="jabatan"></td>
+                <td id="status"></td>
+                <td id="gaji_pokok"></td>
+                <td id="tunjangan_jabatan"></td>
+                <td id="bpjs"></td>
+                <td id="tunjangan_keluarga"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Gaji</td>
+                <td id="total_gaji" colspan="4"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Java Script -->
+     <script>
+
+        // Variabel yang diketahui
+
+        let pegawai = "Dodi Prayodi";
+        let umur = "25 Tahun";
+        let jabatan = "Manager";
+        let status = "Menikah";
+        let gaji = 0;
+
+        // Gaji Pokok(if): Manajer=>15 jt, Asisten Manajer=>10 jt, Staff=>5 jt 
+
+        if(jabatan == "Manager"){
+            gaji = 15000000;
+        }
+        else if (jabatan == "Asisten Manager"){
+            gaji = 10000000;
+        }
+        else if (jabatan == "Staff"){
+            gaji = 5000000;
+        }
+        else{
+            gaji = 0;
+        }
+
+        // Tunjangan Jabatan: 15% dari gapok 
+        let tunjangan_jabatan = 0.15 * gaji;
+
+        // BPJS: 10% dari gapok
+        let bpjs = 0.1 * gaji;
+
+        // Tunjangan Keluarga (ternary): dilihat dari status yg sudah menikah =>20% dari gapok 
+        let tunjangan_keluarga = (status == "Menikah") ? 0.2 * gaji : 0 ;
+
+        // Total Gaji: jumlahlahkan seluruh element gaji 
+        let total_gaji = gaji + tunjangan_jabatan + bpjs + tunjangan_keluarga;
+
+        // Cetak nama pegawai
+        document.getElementById("nama_pegawai").innerText= pegawai;
+
+        // Cetak umur pegawai
+        document.getElementById("umur").innerText= umur;
+        
+        // Cetak jabatan
+        document.getElementById("jabatan").innerText= jabatan;
+
+        // Cetak status
+        document.getElementById("status").innerText= status;
+
+        //Cetak gaji pokok
+        document.getElementById("gaji_pokok").innerText= gaji.toLocaleString("id-ID");
+
+        // Cetak tunjangan jabatan
+        document.getElementById("tunjangan_jabatan").innerText= tunjangan_jabatan.toLocaleString("id-ID");
+
+        // Cetak bpjs
+        document.getElementById("bpjs").innerText=bpjs.toLocaleString("id-ID");
+
+        // Cetak tunjangan keluarga
+        document.getElementById("tunjangan_keluarga").innerText= tunjangan_keluarga.toLocaleString("id-ID");
+
+        // Cetak total gaji
+        document.getElementById("total_gaji").innerText= total_gaji.toLocaleString("id-ID");
+
+
+
+     </script>
+    
+</body>
+</html>
