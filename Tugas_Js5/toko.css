@@ -1,0 +1,47 @@
+body{
+    font-family: sans-serif;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-group{
+    margin-bottom: 15px;
+    text-align: center;
+}
+button{
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#btnTambah{
+    background-color: #4CAF50;
+    color: white;
+}
+#btnHapus{
+    background-color:#f44336 ;
+    color: white;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+th{
+    background-color: #b1acac;
+}
+.hapusBtn{
+    background-color:#f44336 ;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
