@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Mahasiswa - Siti Sa'diyah</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .top-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .btn-group{
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-group button{
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #btnTambah{
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #btnHapus{
+            background-color: #f44336;
+            color: white;
+        }
+
+        form#formUser {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        form#formUser input {
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        form#formUser button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        form#formUser button:hover {
+            background-color: #45a049;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,td{
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th{
+            background-color: #b1acac;
+        }
+
+        .hapusBtn{
+            background-color:#f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Daftar Mahasiswa Prodi Sistem Informasi</h1>
+
+    <h2>Tambah Data</h2>
+    <form id="formUser">
+        <input type="text" id="nama" placeholder="Nama" required>
+        <input type="number" id="umur" placeholder="Umur" required>
+        <input type="text" id="alamat" placeholder="Alamat" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit" id="tambahData">Tambah</button>
+    </form>
+    <hr>
+
+    <div class="top-bar">
+        <h2>Daftar Mahasiswa</h2>
+        <div class="btn-group">
+            <button id="btnTambah">Tambah Data Otomatis</button>
+            <button id="btnHapus">Hapus Semua Data</button>
+        </div>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Alamat</th>
+                <th>Email</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="tampilkan"></tbody>
+    </table>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
