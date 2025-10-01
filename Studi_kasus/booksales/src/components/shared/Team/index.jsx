@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Team(){
     return(
         <>
-            <section className="py-3 text-center container">
+            <section className="py-0 text-center container">
             <div className="row py-lg-5">
               <div className="col-lg-6 col-md-8 mx-auto">
                 <h1 className="fw-bold">Our Team</h1>

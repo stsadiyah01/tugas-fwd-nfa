@@ -13,9 +13,11 @@ export default function Hero(){
               </p>
 
               <div className="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
+                <Link to="/login">
+                  <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">
                   Beli Sekarang
                 </button>
+                </Link>
                 <button type="button" className="btn btn-outline-secondary btn-lg px-4">
                   Selengkapnya
                 </button>
