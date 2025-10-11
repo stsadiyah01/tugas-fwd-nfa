@@ -16,7 +16,7 @@
             padding: 25px 30px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 100%;
+            width: 800px;
         }
         h2 {
             text-align: center;
@@ -83,7 +83,7 @@
             <input type="email" name="email" placeholder="Masukkan email anda" required>
 
             <label>Nilai Ujian:</label>
-            <input type="number" name="nilai"  placeholder="Masukkan Nilai Ujian Anda" required>
+            <input type="number" name="nilai"  placeholder="Masukkan Nilai Ujian Anda" min="0" max="100" required>
 
             <input class="kirim" type="submit" name="submit" value="Kirim">
             <input class="kirim" type="reset" name="submit" value="Batal">
